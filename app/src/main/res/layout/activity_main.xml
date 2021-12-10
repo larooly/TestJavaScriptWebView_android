@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#EEEEFF">
+
+
+
+
+    <WebView
+        android:id="@+id/MainWebView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ShowMeText"
+        android:text="나아는 누구 여긴 어디일까 저넘의 권한 "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Mainbutton"
+        android:backgroundTint="#862749"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="내이름은 버튼" />
+
+    <WebView
+        android:id="@+id/secondWebView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/secondButton"
+        android:backgroundTint="#274986"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="따로따로버튼" />
+
+</LinearLayout>

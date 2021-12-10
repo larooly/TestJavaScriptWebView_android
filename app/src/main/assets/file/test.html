@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>이게맞나</title>
+  <script type="text/javascript">
+      function samplefunction() {
+          var x = document.getElementById("textValues")
+          console.log(x.value);
+          var y = document.getElementById("result");
+          y.innerText = x.value;
+          try {
+            Mobile.samplefunction(x.value);
+          } catch (e) {
+            console.log(e);
+          } finally {
+
+          }
+
+          //console.log(testadding());
+      }
+
+      function testadding(mong){
+        var today = new Date();
+        var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+        var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+        var dateTime = date+' '+time;
+        var labeling = document.getElementById("showClock");
+        labeling.innerText = dateTime;
+        console.log(mong);
+
+        return dateTime;
+    }
+
+    </script>
+</head>
+
+<body>
+<h1>간단테스트용</h1>
+<h2>너무 간만이라 이거 맞나</h2>
+<form class="" action="index.html" method="post">
+  <input type="text" name="" value="" id="textValues">
+  <input type="button" value="눌러요" onclick="samplefunction()"/>
+</form>
+<h6 id="result">누르면 바뀔꺼야</h6>
+<h4 id="showClock">나는 시계에요</h4>
+</body>
+</html>
