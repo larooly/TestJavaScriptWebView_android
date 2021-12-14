@@ -35,7 +35,7 @@ public class CustomBridge {
             public void run() {
                 try{
                     Log.d("hello",va);
-                    mtextView.setText(va);
+                    mtextView.setText("app get Value : "+va);
 
                 }catch (Exception e){
                     e.printStackTrace();
